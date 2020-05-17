@@ -12,11 +12,14 @@ export class AppComponent {
   kUp='';
   kDown='';
   blurText = '';
+
   displayName(){
     this.name = 'Welcome to Angular Training';
+    console.log("You have entered the displayName() function.")
   } 
 
   displayValue(event){
+    console.log(event);
     console.log(event.key);
     this.kPress = this.kPress + event.key;
     this.kUp = this.kUp + event.key;
